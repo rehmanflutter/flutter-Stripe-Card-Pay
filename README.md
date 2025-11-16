@@ -1,4 +1,4 @@
-# payment_method
+# Payment Method
 
 
 #   Android  folders Changing 👇👇👇👇👇
@@ -15,6 +15,11 @@ android/app/src/main/res/values/styles.xml
 # stripe testing Card 👇👇👇👇👇
 
 https://docs.stripe.com/testing
+
+
+
+
+
 
 
 <p align="center">
