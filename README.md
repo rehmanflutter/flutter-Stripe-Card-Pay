@@ -1,7 +1,7 @@
 # payment_method
 
 
-#   Android  folders Changing 
+#   Android  folders Changing 👇👇👇👇👇
 android/app/src/main/kotlin/<your_package_name>/MainActivity.kt
 
 
