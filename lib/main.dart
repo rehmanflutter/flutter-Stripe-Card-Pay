@@ -5,6 +5,7 @@ import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
+  //  Add your publishableKey👇👇👇👇👇👇👇
   Stripe.publishableKey = 'your publishableKey';
   Stripe.merchantIdentifier = 'LingoBuzz';
 
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         Uri.parse('https://api.stripe.com/v1/payment_intents'),
         headers: {
           'Authorization':
+              //  Add your secretKey👇👇👇👇👇
               'Bearer ${'Your secretKey'}',
           'Content-Type': 'application/x-www-form-urlencoded',
         },
@@ -78,7 +80,8 @@ class MyApp extends StatelessWidget {
       await Stripe.instance.initPaymentSheet(
         paymentSheetParameters: SetupPaymentSheetParameters(
           paymentIntentClientSecret: paymentIntent['client_secret'],
-          merchantDisplayName: 'LingoBuzz', //StripeConfig.merchantDisplayName,
+          //  Add your stripe AppName 👇👇👇👇👇👇👇
+          merchantDisplayName: 'LingoBuzz',
           style: ThemeMode.light,
           billingDetailsCollectionConfiguration:
               const BillingDetailsCollectionConfiguration(
